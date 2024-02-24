@@ -1,0 +1,76 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.homelogo img{
+    /* width: 100px; */
+    height: 80px;
+
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+
+}
+.loginbtn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #B76E79;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.mainnav{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li{
+    margin: 0 10px;
+    font-size: larger;
+}
+
+nav ul{
+
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+}
+nav{
+    width: 20%;
+
+}
+
+.searchbarcon input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.searchbarcon{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
