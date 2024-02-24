@@ -1,0 +1,167 @@
+:root {
+    --color1: #232323;
+    --color2: #fff;
+    --color3: #f6c691;
+    --transitionDuration: 1s;
+}
+.theproductholder{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+.product_card {
+    background-color: var(--color1);
+    color: var(--color2);
+    width: 320px;
+    height: 450px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 'Nike' label in the background */
+
+
+/* Circle */
+
+
+
+
+.card__img {
+    width: 270px;
+    height: 130px;
+    z-index: 1;
+    transition: top var(--transitionDuration);
+    
+    /* Position */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+.product_card:hover .card__img {
+    top: 14%;
+}
+
+.card__title {
+    font-weight: 600;
+    transition: top var(--transitionDuration);
+    
+    /* Position */
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+}
+
+.product_card:hover .card__title {
+    top:75%;
+}
+
+.card__content {
+    height: 70px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: top var(--transitionDuration),
+                opacity var(--transitionDuration) calc(var(--transitionDuration) / 2);
+
+    /* Position */
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product_card:hover .card__content {
+    opacity: 100%;
+    top: 70%;
+}
+
+.card__sizeContainer {
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__sizeNumber {
+    background-color: var(--color2);
+    color: var(--color1);
+    width: 26px;
+    height: 26px;
+    padding: 5px 7px;
+    margin: 0 5px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__sizeNumber:hover {
+    background-color: var(--color3);
+}
+
+.card__colorContainer {
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__colorCircle {
+    background-color: var(--color2);
+    color: var(--color1);
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card__colorCircle:hover {
+    outline: solid 2px var(--color2);
+}
+
+.card__link {
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: top var(--transitionDuration);
+
+    /* Position */
+    position: absolute;
+    left: 50%;
+    top: 250%;
+    transform: translate(-50%, -50%);
+}
+
+.product_card:hover .card__link {
+    top: 88%;
+}
+
+.card__link:hover {
+    background-color: var(--color3);
+}
